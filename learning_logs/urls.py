@@ -1,6 +1,6 @@
 # defines URL patterns for learninig_logs
 
-from django.conf.urls import urls
+from django.conf.urls import include, url
 
 from . import views
 

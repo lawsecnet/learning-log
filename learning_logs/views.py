@@ -4,4 +4,4 @@ from django.shortcuts import render
 
 def index(request):
     # home page for learning learning_log
-    return render(reques, 'learning_logs/index.html')
+    return render(request, 'learning_logs/index.html')
