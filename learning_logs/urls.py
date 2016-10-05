@@ -1,4 +1,4 @@
-# defines URL patterns for learninig_logs
+# defines URL patterns for learning_logs
 
 from django.conf.urls import include, url
 
@@ -13,4 +13,10 @@ urlpatterns = [
 
     # detail page for a single topic
     url(r'^topics/(?P<topic_id>\d+)/$', views.topic, name = 'topic'),
+
+    # page for adding new topic
+    url(r'^new_topic/$', views.new_topic, name = 'new_topic'),
+
+    # page for adding new entry
+    url(r'^new_entry/(?P<topic_id>\d+)/$', views.new_entry, name='new_entry'),
 ]
