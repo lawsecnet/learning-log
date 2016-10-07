@@ -20,6 +20,5 @@ urlpatterns = [
     # page for adding new entry
     url(r'^new_entry/(?P<topic_id>\d+)/$', views.new_entry, name='new_entry'),
     # page for editing an entry
-    url(r'^edit_entry/(?P<entry_id>\d+)/$', views.edit_entry,
-    name='edit_entry'),
+    url(r'^edit_entry/(?P<entry_id>\d+)/$', views.edit_entry, name='edit_entry'),
 ]
